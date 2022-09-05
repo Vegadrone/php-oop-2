@@ -1,5 +1,4 @@
 <?php 
-
     class Product{
         protected $brand;
         protected $description;

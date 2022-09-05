@@ -1,25 +1,26 @@
 <?php 
 
     require_once __DIR__ . '/Product.php';
-    class Games extends Product{
+
+    class Accessory extends Product{
         protected $name;
-        protected $material;
         protected $type;
         protected $size;
+        protected $material;
 
-        public function __construct($_name, $_material, $_type, $_size){
+        public function __construct($_name, $_type, $_size, $_material){
             $this-> name = $_name;
-            $this-> material = $_material;
             $this-> type = $_type;
-            $this-> size = $_size;  
+            $this-> size = $_size;
+            $this-> material = $_material;             
         }
 
         public function setName($_name){
-            $this->name = $_name;
+            $this-> name = $_name;
         }
 
         public function getName(){
-            return $this->name;
+            return $this-> name;
         }
 
         public function setType($_type){
@@ -29,21 +30,19 @@
         public function getType(){
             return $this->type;
         }
-
         public function setSize($_size){
-            $this->size = $_size;
+            $this-> size = $_size;
         }
 
         public function getSize(){
-            return $this->size;
+            return $this-> size;
         }
-        
         public function setMaterial($_material){
-            $this->material = $_material;
+            $this-> material = $_material;
         }
 
         public function getMaterial(){
-            return $this->material;
+            return $this-> material;
         }    
     }
 ?>
