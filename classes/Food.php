@@ -8,8 +8,9 @@
         protected $packsNumber;
         protected $animalType;
 
-       public function __construct($_name, $_weight, $_type, $_packsNumber, $_animalType){
-            $this-> $_name;
+       public function __construct($_brand, $_description, $_price, $_name, $_weight, $_type, $_packsNumber, $_animalType){
+            parent::__construct($_brand, $_description, $_price);
+            $this-> name = $_name;
             $this-> weight = $_weight;
             $this-> type = $_type;
             $this-> packsNumber = $_packsNumber;
@@ -46,7 +47,7 @@
         public function getPacksNumber(){
             return $this-> packsNumber;
         }
-        
+
         public function setAnimalType($_animalType){
             $this->animalType = $_animalType;
         }

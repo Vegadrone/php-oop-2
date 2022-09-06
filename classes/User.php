@@ -1,5 +1,5 @@
 <?php 
-
+    require_once __DIR__ . '/CreditCard.php';
     class User{
         protected $name;
         protected $surname;
@@ -24,6 +24,10 @@
 
         public function getSurname(){
             return $this-> surname;
+        }
+
+        public function addCreditCard($creditCard){
+            $this-> creditCard = $creditCard;
         }
     }
 

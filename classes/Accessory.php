@@ -8,7 +8,8 @@
         protected $size;
         protected $material;
 
-        public function __construct($_name, $_type, $_size, $_material){
+        public function __construct($_brand, $_description, $_price, $_name, $_type, $_size, $_material){
+            parent::__construct($_brand, $_description, $_price);
             $this-> name = $_name;
             $this-> type = $_type;
             $this-> size = $_size;

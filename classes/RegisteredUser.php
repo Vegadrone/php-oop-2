@@ -7,7 +7,8 @@
         protected $email;
         protected $password;
 
-        public function __construct($_nickname, $_email, $_password){
+        public function __construct($_name, $_surname, $_nickname, $_email, $_password){
+            parent::__construct($_name, $_surname);
             $this->nickname = $_nickname;
             $this->email = $_email;
             $this->password = $_password;
